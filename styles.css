@@ -1,0 +1,239 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Cabecera */
+.header {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffdd57;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../img/hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 1rem;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 4rem; /* Aumenta el tamaño del texto */
+    margin-bottom: 1rem;
+    color: #ffffff; /* Texto blanco */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Sombra para mayor contraste */
+    background: linear-gradient(90deg, #007bff, #0056b3); /* Fondo degradado */
+    -webkit-background-clip: text; /* Aplica el degradado al texto */
+    -webkit-text-fill-color: transparent; /* Hace que el fondo sea visible */
+    text-align: center;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+    background: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Sección Sobre Nosotros */
+.about {
+    background: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about h3 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.about-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Servicios */
+.services {
+    background: #f9f9f9;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.services h3 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+}
+
+.services-list li {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.services-list li:last-child {
+    border-bottom: none;
+}
+
+/* Formulario */
+.contact {
+    background: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Pie de página */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
